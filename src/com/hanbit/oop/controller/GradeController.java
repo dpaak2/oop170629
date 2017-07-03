@@ -2,14 +2,16 @@ package com.hanbit.oop.controller;
 import javax.swing.*;
 
 import com.hanbit.oop.domain.GradeBean;
-import com.hanbit.oop.service.GradeService;
+import com.hanbit.oop.serviceImpl.GradeService2;
 public class GradeController {
 	public static void main(String[] args) {
 		GradeBean grade=new GradeBean();
-		GradeService service=new GradeService();
+		GradeService2 service=new GradeService2();
 		while (true) {
 			switch (JOptionPane.showInputDialog("0.종료  1.학점계산")) {
-			case "0":return;
+			case "0":
+				JOptionPane.showInternalMessageDialog(null, "system closed");
+				return;
 			case "1":
 				grade.setName(JOptionPane.showInputDialog("name"));
 				grade.setMajor(JOptionPane.showInputDialog("Major"));

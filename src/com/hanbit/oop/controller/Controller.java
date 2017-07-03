@@ -2,12 +2,12 @@ package com.hanbit.oop.controller;
 
 import java.util.Scanner;
 
-import com.hanbit.oop.service.BmiService;
-import com.hanbit.oop.service.CalcService;
-import com.hanbit.oop.service.GradeService;
-import com.hanbit.oop.service.LeapYear;
-import com.hanbit.oop.service.TaxCalc;
-import com.hanbit.oop.service.TimeCal;
+import com.hanbit.oop.serviceImpl.BmiService;
+import com.hanbit.oop.serviceImpl.CalcService;
+import com.hanbit.oop.serviceImpl.GradeService2;
+import com.hanbit.oop.serviceImpl.LeapYear;
+import com.hanbit.oop.serviceImpl.TaxCalc;
+import com.hanbit.oop.serviceImpl.TimeCal;
 import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
 public class Controller {
@@ -18,7 +18,7 @@ public class Controller {
 		TaxCalc tax=new TaxCalc();
 		TimeCal timeCal=new TimeCal();
 		LeapYear leapYear=new LeapYear();
-		GradeService gradeReport =new GradeService();
+		GradeService2 gradeReport =new GradeService2();
 		BmiService bmiService= new BmiService();
 		while (true) {
 			System.out.println("실행할 동작을 입력하여 주세요 0.STOP , 1.BMI , 2.TAX , 3PLUS , 4.MINUS, 5.TIMECALC, 6.LEAPYEAR, 7.GRADE REPORT ,8.CALENDER");

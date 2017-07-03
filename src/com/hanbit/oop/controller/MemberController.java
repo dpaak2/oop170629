@@ -1,16 +1,17 @@
 package com.hanbit.oop.controller;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 import com.hanbit.oop.domain.MemberBean;
 import com.hanbit.oop.service.MemberService;
-import javax.swing.*;
+import com.hanbit.oop.serviceImpl.MemberServiceImpl;
 public class MemberController {
 	public static void main(String[] args) {
-		MemberService memService=new MemberService();
+		MemberService memService=new MemberServiceImpl();
 		MemberBean member=new MemberBean();
 		while(true){
 			switch (JOptionPane.showInputDialog("0. 종료  1.회원등록   2.로그인")) {
 			case "0":
-				System.out.println("system close");
+				JOptionPane.showMessageDialog(null, "System closed ");
 				return;
 			case "1":
 				member.setName(JOptionPane.showInputDialog("name"));

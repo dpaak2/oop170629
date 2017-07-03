@@ -25,8 +25,6 @@ public class AndroidPhone extends Iphone {
 	public String getAppl(){
 		return appl;
 	}
-	
-	
 	@Override
 	public String toString(){
 		//스마트폰이기 때문에 이동가능한 상태로 홍길동에게 010 번호로 
