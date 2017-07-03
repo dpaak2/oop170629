@@ -1,22 +1,8 @@
 package com.hanbit.oop.domain;
 
 public class GradeBean {
-	private int total,avg;
 	private String kor, eng, math,name,major;
-	
-	public int getTotal() {
-		return total;
-	}
-	public void setTotal(int total) {
-		this.total = total;
-	}
-	public int getAvg() {
-		return avg;
-	}
-	public void setAvg(int avg) {
-		this.avg = avg;
-	}
-	
+
 	public String getKor() {
 		return kor;
 	}
