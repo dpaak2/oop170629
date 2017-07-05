@@ -2,6 +2,8 @@ package com.hanbit.oop.domain;
 
 public class MemberBean {
 	private String id, pw, ssn,name;
+
+
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -33,9 +35,10 @@ public class MemberBean {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	@Override
 	public String toString() {
-		return "";
-		//return "WELCOME " + name + "\t(" + gender+"\t"+age+"세)";
+		return "MemberBean [id=" + id + ", pw=" + pw + ", ssn=" + ssn + ", name=" + name + "]";
 	}
+
+	
 }
